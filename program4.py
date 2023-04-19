@@ -12,8 +12,8 @@ print("The average of the numbers in the list is:",average)
 x = average
 closestvalue=n[0]
 dis=abs(x-closestvalue)
-for i in range (0,x):
-    if(abs(x-closestvalue < dis)):
+for i in range (a):
+    if(abs(x-closestvalue )< dis):
         closestvalue = n[i]
         dis=abs(x-closestvalue)
-    print("The closest value of the average is:")
+print("The closest value of the average is:",closestvalue)

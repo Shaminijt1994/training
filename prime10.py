@@ -1,10 +1,11 @@
-n = int(input("Enter the number for calculating the prime factors :\n"))
-for i in range(2,n + 1):
-    if n % i == 0:
-        count = 1
-        for j in range(2,(i//2 + 1)):
-            if(i % j == 0):
-                count = 0
-                break
-        if(count == 1):
-            print(i)
+n = int(input("Enter the number: "))
+c = 1
+for j in range(2,(n//2 + 1)):
+    if(n % j == 0):
+        c = 0
+        break
+
+if(c==1):
+    print("This is a prime number")
+else:
+    print("This is not a prime number")
